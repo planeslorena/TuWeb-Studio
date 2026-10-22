@@ -1,0 +1,6 @@
+{
+  "name": "TuWeb Studio — Estudio de Diseño y Desarrollo Web",
+  "description": "Sitio oficial de TuWeb Studio en Argentina. Diseñamos experiencias digitales, tiendas online y sistemas a medida que hacen crecer tu negocio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
