@@ -41,7 +41,7 @@ export const About: React.FC = () => (
           <div className="lg:col-span-8 relative">
             <span className="inline-block px-3 py-1 rounded-full bg-[#E6F8F7] text-[#00857D] text-xs font-semibold">DISEÑO Y DESARROLLO WEB</span>
             <h3 id="founder-name" className="mt-5 text-3xl md:text-4xl font-extrabold tracking-tight text-[#253740]">Lorena Planes</h3>
-            <p className="mt-1 text-sm font-semibold text-[#00857D]">Creadora de TuWeb Studio · Olavarría, Argentina</p>
+            <p className="mt-1 text-sm font-semibold text-[#00857D]">Desarrolladora web y creadora de TuWeb Studio</p>
             <div className="mt-6 space-y-4 text-sm md:text-base leading-relaxed text-[#52646C]">
               <p>Soy Lorena, la persona detrás de TuWeb Studio. Me dedico al diseño y desarrollo de sitios y aplicaciones web, y sistemas a medida que ayudan a los negocios a crecer, organizarse y simplificar su trabajo.</p>
               <p>Me gusta involucrarme en cada proyecto, conocer cómo funciona cada negocio y encontrar la mejor manera de llevar sus ideas a la práctica. Trabajo de forma personalizada y, cuando el proyecto lo requiere, cuento con la colaboración de otros profesionales.</p>

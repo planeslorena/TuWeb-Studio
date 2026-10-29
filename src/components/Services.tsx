@@ -93,7 +93,7 @@ export const Services: React.FC = () => {
             </div>
             <h2 className="text-4xl sm:text-6xl md:text-7xl font-extrabold uppercase tracking-tight text-[#253740] leading-[0.9]">
               LO QUE{' '}
-              <span className="bg-gradient-to-r from-[#253740] via-[#00BFB3] to-[#00A89D] bg-clip-text text-transparent">
+              <span className="inline-block text-[#00857D]">
                 HACEMOS
               </span>
             </h2>

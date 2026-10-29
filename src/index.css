@@ -50,7 +50,7 @@ section[id] { scroll-margin-top: 6rem; }
   to { transform: translateX(-50%); }
 }
 .project-row { overflow-x: auto; scrollbar-width: thin; scrollbar-color: #BCCBCC transparent; padding: 4px 0 12px; }
-.project-track { display: flex; width: max-content; animation: project-drift 85s linear infinite; }
+.project-track { display: flex; width: max-content; animation: project-drift 75s linear infinite; }
 .project-track-right { animation-direction: reverse; }
 .project-group { display: flex; gap: 24px; padding-right: 24px; }
 .project-card { display: flex; flex-direction: column; flex-shrink: 0; width: 320px; height: 240px; }
