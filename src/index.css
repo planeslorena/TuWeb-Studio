@@ -41,31 +41,37 @@
   background: #00BFB3;
 }
 
-@keyframes marquee-left {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
-}
+section[id] { scroll-margin-top: 6rem; }
+:focus-visible { outline: 3px solid #00857D; outline-offset: 5px; }
 
-@keyframes marquee-right {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0%); }
+/* Two identical groups make the loop seamless, including its final gap. */
+@keyframes project-drift {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
+.project-row { overflow-x: auto; scrollbar-width: thin; scrollbar-color: #BCCBCC transparent; padding: 4px 0 12px; }
+.project-track { display: flex; width: max-content; animation: project-drift 110s linear infinite; }
+.project-track-right { animation-direction: reverse; }
+.project-group { display: flex; gap: 24px; padding-right: 24px; }
+.project-card { display: flex; flex-direction: column; flex-shrink: 0; width: 320px; height: 240px; }
+.project-card-bar { min-height: 35px; }
+.project-card[data-project="barbieri"] .project-category { max-width: 48%; white-space: normal; text-align: right; line-height: 1.25; }
+/* The supplied Barbieri image has a blank right margin; frame its content only. */
+.project-card[data-project="barbieri"] img { width: 120%; max-width: none; height: auto; }
+.project-card[data-project="jbem"] .project-category { color: #00BFB3; }
+@media (min-width: 640px) { .project-card { width: 380px; height: 260px; } }
+@media (min-width: 768px) { .project-card { width: 420px; height: 270px; } }
+@media (max-width: 639px) { .project-category { max-width: 135px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } }
+@media (hover: none) { .project-overlay { opacity: 1; background: linear-gradient(to top, rgba(26,40,48,.95), transparent 85%); } .project-overlay > p { display: none; } }
+.project-gallery[data-paused="true"] .project-track,
+.project-gallery:hover .project-track { animation-play-state: paused; }
+/* A keyboard user can scroll every original card into view. */
+.project-gallery:has(:focus-visible) .project-track { animation: none; transform: none; }
 
-.animate-marquee-left {
-  display: flex;
-  width: max-content;
-  animation: marquee-left 32s linear infinite;
-}
-
-.animate-marquee-right {
-  display: flex;
-  width: max-content;
-  animation: marquee-right 32s linear infinite;
-}
-
-.animate-marquee-left:hover,
-.animate-marquee-right:hover {
-  animation-play-state: paused;
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  .project-track { animation: none; transform: none; }
+  .project-group[aria-hidden="true"], .project-motion-toggle, .project-motion-hint { display: none; }
 }
 
 /* Subtle turquoise luminous ambient glow */

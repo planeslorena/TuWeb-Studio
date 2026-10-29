@@ -23,7 +23,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
     { label: 'Inicio', href: '#inicio' },
     { label: 'Servicios', href: '#servicios' },
     { label: 'Proyectos', href: '#proyectos' },
-    { label: 'Nosotros', href: '#nosotros' },
+    { label: 'El estudio', href: '#nosotros' },
     { label: 'Contacto', href: '#contacto' },
   ];
 
@@ -47,7 +47,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
 
         {/* Zone 2: Navigation Links */}
         <nav
-          className="hidden md:flex items-center gap-8 text-sm font-semibold tracking-tight text-[#52646C]"
+          className="hidden lg:flex items-center gap-8 text-sm font-semibold tracking-tight text-[#52646C]"
           aria-label="Navegación principal"
         >
           {navLinks.map((link) => (
@@ -78,7 +78,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
         </div>
 
         {/* Mobile Hamburger Button */}
-        <div className="md:hidden flex items-center">
+        <div className="lg:hidden flex items-center">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 text-[#253740] hover:text-[#00BFB3] focus-visible:outline-2 focus-visible:outline-[#00BFB3] rounded-lg transition-colors"
@@ -92,7 +92,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white/98 border-b border-[#F0EDEE] px-6 py-6 shadow-xl transition-all">
+        <div className="lg:hidden bg-white/98 border-b border-[#F0EDEE] px-6 py-6 shadow-xl transition-all">
           <nav className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <a

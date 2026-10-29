@@ -38,7 +38,7 @@ export const Hero: React.FC = () => {
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative min-h-[92vh] lg:min-h-screen pt-28 pb-16 md:pt-36 md:pb-24 flex flex-col justify-between overflow-hidden bg-[#FAFAF9]"
+      className="relative min-h-[92vh] lg:min-h-screen pt-24 pb-8 md:pt-32 md:pb-12 flex flex-col justify-between overflow-hidden bg-[#FAFAF9]"
     >
       {/* Subtle turquoise background ambient glows */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-gradient-to-tr from-[#00BFB3]/12 via-[#253740]/5 to-transparent blur-3xl pointer-events-none" />
@@ -48,9 +48,9 @@ export const Hero: React.FC = () => {
         {/* Massive Editorial Headline */}
         <div className="text-center pt-2 md:pt-4">
           <FadeIn direction="down" delay={0.1}>
-            <div className="inline-flex items-center gap-2 mb-4 px-3.5 py-1 rounded-full bg-white border border-[#E2E8F0] shadow-xs text-xs font-semibold text-[#52646C] tracking-wide">
-              <span className="w-2 h-2 rounded-full bg-[#00BFB3]" />
-              <span>Estudio de Diseño y Desarrollo Web · Olavarría, Argentina</span>
+            <div className="inline-flex items-center gap-2 mb-8 px-3.5 py-1 rounded-full bg-white border border-[#E2E8F0] shadow-xs text-xs font-semibold text-[#52646C] tracking-wide">
+              <span className="w-2 h-2 shrink-0 rounded-full bg-[#00BFB3]" />
+              <span>Desde Olavarría trabajamos remoto para toda la Argentina.</span>
             </div>
           </FadeIn>
 
@@ -70,8 +70,8 @@ export const Hero: React.FC = () => {
                 Diseñamos experiencias digitales que hacen crecer tu negocio.
               </p>
               <p className="mt-3 text-sm md:text-base text-[#52646C] leading-relaxed max-w-xl mx-auto">
-                Webs, tiendas online y sistemas a medida. Diseñamos y desarrollamos
-                soluciones que se adaptan a vos.
+                Webs, tiendas online, sistemas de turnos y herramientas de gestión
+                interna a medida. Diseñamos y desarrollamos soluciones que se adaptan a vos.
               </p>
             </div>
           </FadeIn>
@@ -168,9 +168,9 @@ export const Hero: React.FC = () => {
                   {/* Right Column: Interactive App Snapshot in Dark Petroleum Blue */}
                   <div className="md:col-span-5 bg-[#1A2830] rounded-xl p-4 text-white shadow-inner relative overflow-hidden border border-[#253740]">
                     <div className="text-[11px] font-mono text-[#00BFB3] mb-2 flex items-center justify-between">
-                      <span className="font-bold">PANEL DE CONTROL</span>
+                      <span className="font-bold">VISTA ILUSTRATIVA</span>
                       <span className="text-[#00BFB3] flex items-center gap-1 font-semibold">
-                        <CheckCircle2 className="w-3 h-3" /> ACTIVO
+                        <CheckCircle2 className="w-3 h-3" /> DEMO
                       </span>
                     </div>
                     <div className="space-y-2 text-xs">
@@ -184,9 +184,9 @@ export const Hero: React.FC = () => {
                       <div className="p-2.5 rounded-lg bg-[#253740] border border-[#3A4E58] flex items-center justify-between">
                         <div>
                           <p className="font-semibold text-neutral-100">Cobro Mercado Pago</p>
-                          <p className="text-[11px] text-neutral-300">Maison Luna #1084</p>
+                          <p className="text-[11px] text-neutral-300">Ejemplo de integración</p>
                         </div>
-                        <span className="text-[11px] font-mono text-[#00BFB3] font-bold">APROBADO</span>
+                        <span className="text-[11px] font-mono text-[#00BFB3] font-bold">DEMO</span>
                       </div>
                     </div>
                   </div>
@@ -219,8 +219,8 @@ export const Hero: React.FC = () => {
                 <Code2 className="w-5 h-5" />
               </div>
               <div className="text-left pr-2">
-                <p className="text-xs font-bold text-[#253740]">Velocidad Ultrarrápida</p>
-                <p className="text-[11px] text-[#52646C]">Carga en menos de 1 segundo</p>
+                <p className="text-xs font-bold text-[#253740]">Rendimiento cuidado</p>
+                <p className="text-[11px] text-[#52646C]">Optimización de carga y navegación</p>
               </div>
             </motion.div>
           </motion.div>

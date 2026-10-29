@@ -1,6 +1,7 @@
+import { WhatsAppIcon } from './WhatsAppIcon';
 import React from 'react';
 import { BrandLogo } from './BrandLogo';
-import { ArrowUp, ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react';
+import { ArrowUp, ArrowUpRight, Mail, MapPin } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -11,7 +12,7 @@ export const Footer: React.FC = () => {
     { label: 'Inicio', href: '#inicio' },
     { label: 'Servicios', href: '#servicios' },
     { label: 'Proyectos', href: '#proyectos' },
-    { label: 'Nosotros', href: '#nosotros' },
+    { label: 'El estudio', href: '#nosotros' },
     { label: 'Contacto', href: '#contacto' },
   ];
 
@@ -44,7 +45,7 @@ export const Footer: React.FC = () => {
                 <span>Olavarría, Provincia de Buenos Aires, Argentina</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-[#00BFB3]" />
+                <WhatsAppIcon className="w-4 h-4 text-[#00BFB3]" />
                 <a
                   href="https://wa.me/5492284230375"
                   target="_blank"
@@ -57,10 +58,10 @@ export const Footer: React.FC = () => {
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[#00BFB3]" />
                 <a
-                  href="mailto:planeslorena@gmail.com"
+                  href="mailto:tuwebstudioolav@gmail.com"
                   className="hover:text-[#00BFB3] transition-colors"
                 >
-                  planeslorena@gmail.com
+                  tuwebstudioolav@gmail.com
                 </a>
               </div>
             </div>

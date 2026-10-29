@@ -1,5 +1,6 @@
+import { WhatsAppIcon } from './WhatsAppIcon';
 import React, { useState } from 'react';
-import { ArrowUpRight, MessageCircle, Mail, MapPin, Phone, Send, CheckCircle2, Clock } from 'lucide-react';
+import { ArrowUpRight, Mail, MapPin, Send, CheckCircle2, Clock } from 'lucide-react';
 import { Magnet } from './Magnet';
 import { FadeIn } from './FadeIn';
 
@@ -35,13 +36,13 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contacto" className="py-24 md:py-36 bg-[#FAFAF9] relative overflow-hidden">
+    <section id="contacto" className="py-12 md:py-20 bg-[#FAFAF9] relative overflow-hidden">
       {/* Background soft turquoise glows */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-gradient-to-tr from-[#00BFB3]/15 via-[#00BFB3]/5 to-transparent rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
         {/* Main CTA Headlines */}
-        <div className="text-center max-w-4xl mx-auto mb-16 md:mb-20">
+        <div className="text-center max-w-4xl mx-auto mb-10 md:mb-14">
           <FadeIn direction="up">
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#CBD5E1] text-xs font-semibold text-[#52646C] mb-4">
               <span className="w-2 h-2 rounded-full bg-[#00BFB3]" />
@@ -70,7 +71,7 @@ export const Contact: React.FC = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-4 px-10 py-5 rounded-full text-base md:text-xl font-extrabold text-[#1A2830] bg-[#00BFB3] hover:bg-[#00A89D] shadow-xl shadow-[#00BFB3]/25 hover:shadow-2xl hover:shadow-[#00BFB3]/35 transition-all duration-300 group cursor-pointer"
               >
-                <MessageCircle className="w-6 h-6 fill-white/20" />
+                <WhatsAppIcon className="w-6 h-6" />
                 <span>Hablemos por WhatsApp</span>
                 <ArrowUpRight className="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
               </a>
@@ -199,7 +200,7 @@ export const Contact: React.FC = () => {
                   className="flex items-center gap-3.5 text-neutral-200 hover:text-white transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-xl bg-[#253740] flex items-center justify-center text-[#00BFB3] group-hover:bg-[#00BFB3] group-hover:text-[#1A2830] transition-colors">
-                    <Phone className="w-5 h-5" />
+                    <WhatsAppIcon className="w-5 h-5" />
                   </div>
                   <div>
                     <p className="text-xs text-neutral-400">Teléfono / WhatsApp</p>
@@ -208,7 +209,7 @@ export const Contact: React.FC = () => {
                 </a>
 
                 <a
-                  href="mailto:planeslorena@gmail.com"
+                  href="mailto:tuwebstudioolav@gmail.com"
                   className="flex items-center gap-3.5 text-neutral-200 hover:text-white transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-xl bg-[#253740] flex items-center justify-center text-[#00BFB3] group-hover:bg-[#00BFB3] group-hover:text-[#1A2830] transition-colors">
@@ -216,7 +217,7 @@ export const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-xs text-neutral-400">Correo Electrónico</p>
-                    <p className="font-semibold text-neutral-100">planeslorena@gmail.com</p>
+                    <p className="font-semibold text-neutral-100">tuwebstudioolav@gmail.com</p>
                   </div>
                 </a>
 
@@ -243,8 +244,8 @@ export const Contact: React.FC = () => {
             </div>
 
             <div className="mt-8 pt-6 border-t border-[#253740] text-xs text-neutral-300 flex items-center justify-between">
-              <span>Lorena Planes · Dirección</span>
-              <span className="text-[#00BFB3] font-semibold">Respuesta en el día</span>
+              <span>Lorena Planes · Fundadora y directora</span>
+              <span className="text-[#00BFB3] font-semibold">Trato directo</span>
             </div>
           </div>
         </div>

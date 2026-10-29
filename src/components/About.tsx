@@ -1,132 +1,60 @@
+import { WhatsAppIcon } from './WhatsAppIcon';
 import React from 'react';
-import { AnimatedText } from './AnimatedText';
+import { ArrowUpRight, Mail, MapPin, MousePointer, Zap, CheckCircle, Sparkles } from 'lucide-react';
 import { FadeIn } from './FadeIn';
-import { MousePointer, CheckCircle, Zap, Sparkles } from 'lucide-react';
 
-export const About: React.FC = () => {
-  return (
-    <section id="nosotros" className="py-24 md:py-36 bg-[#FAFAF9] relative overflow-hidden">
-      {/* Decorative ambient turquoise gradient */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-[#00BFB3]/8 rounded-full blur-3xl pointer-events-none" />
+const pillars = [
+  { icon: MousePointer, title: '100% Personalizado', text: 'Diseño pensado para tu marca y tu negocio.' },
+  { icon: Zap, title: 'Automatización Real', text: 'Turnos, cobros y herramientas que simplifican tu día.' },
+  { icon: CheckCircle, title: 'Acompañamiento Continuo', text: 'Trato cercano antes y después del lanzamiento.' },
+];
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          {/* Left Column: Heading and Brand Statement */}
-          <div className="lg:col-span-5">
-            <FadeIn direction="up">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#CBD5E1] text-xs font-semibold text-[#52646C] mb-4">
-                <span className="w-2 h-2 rounded-full bg-[#00BFB3]" />
-                <span>Sobre TuWeb Studio</span>
-              </div>
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-[#253740] leading-[0.95]">
-                MÁS QUE <br />
-                <span className="bg-gradient-to-r from-[#253740] via-[#00BFB3] to-[#00A89D] bg-clip-text text-transparent">
-                  UNA WEB
-                </span>
-              </h2>
-            </FadeIn>
-
-            {/* Studio Pillars */}
-            <div className="mt-10 space-y-4">
-              <FadeIn direction="up" delay={0.1}>
-                <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] shadow-xs flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#E6F8F7] text-[#00BFB3] flex items-center justify-center shrink-0">
-                    <MousePointer className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-[#253740]">100% Personalizado</h4>
-                    <p className="text-xs text-[#52646C] mt-0.5">
-                      No usamos plantillas genéricas. Cada proyecto se diseña desde cero según tu negocio.
-                    </p>
-                  </div>
-                </div>
-              </FadeIn>
-
-              <FadeIn direction="up" delay={0.2}>
-                <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] shadow-xs flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#E6F8F7] text-[#00BFB3] flex items-center justify-center shrink-0">
-                    <Zap className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-[#253740]">Automatización Real</h4>
-                    <p className="text-xs text-[#52646C] mt-0.5">
-                      Conexión directa con WhatsApp, cobros en pesos por Mercado Pago y agendas sin fricción.
-                    </p>
-                  </div>
-                </div>
-              </FadeIn>
-
-              <FadeIn direction="up" delay={0.3}>
-                <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] shadow-xs flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#253740] text-white flex items-center justify-center shrink-0">
-                    <CheckCircle className="w-5 h-5 text-[#00BFB3]" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-[#253740]">Acompañamiento Continuo</h4>
-                    <p className="text-xs text-[#52646C] mt-0.5">
-                      No te dejamos solo con la web: te enseñamos a gestionarla y te brindamos soporte técnico.
-                    </p>
-                  </div>
-                </div>
-              </FadeIn>
-            </div>
-          </div>
-
-          {/* Right Column: Character-by-Character Scroll Reveal Text */}
-          <div className="lg:col-span-7 space-y-8">
-            <div className="p-8 md:p-12 rounded-3xl bg-white border border-[#E2E8F0] shadow-sm relative overflow-hidden">
-              <div className="text-xs font-mono uppercase tracking-wider text-[#00BFB3] font-bold mb-6 flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-[#00BFB3]" />
-                <span>Nuestra Filosofía de Trabajo</span>
-              </div>
-
-              {/* Scroll reveal animated paragraphs */}
-              <div className="text-xl sm:text-2xl md:text-3xl font-medium leading-relaxed tracking-tight text-[#253740]">
-                <AnimatedText
-                  text="En TuWeb Studio creemos que una buena web no solo tiene que verse linda: tiene que funcionar, simplificar procesos y ayudar a que tu negocio crezca."
-                  highlightWords={['linda:', 'funcionar,', 'simplificar', 'crezca.']}
-                  highlightColor="#00BFB3"
-                  className="mb-8"
-                />
-
-                <AnimatedText
-                  text="Escuchamos tus ideas, entendemos lo que necesitás y creamos soluciones digitales a medida, acompañándote desde el primer paso hasta mucho después del lanzamiento."
-                  highlightWords={['Escuchamos', 'necesitás', 'medida,', 'acompañándote', 'lanzamiento.']}
-                  highlightColor="#253740"
-                />
-              </div>
-
-              {/* Studio Trust Metrics */}
-              <div className="mt-12 pt-8 border-t border-[#F0EDEE] grid grid-cols-2 sm:grid-cols-3 gap-6">
-                <div>
-                  <p className="text-2xl sm:text-3xl font-extrabold text-[#253740] tracking-tight">
-                    +50
-                  </p>
-                  <p className="text-xs text-[#52646C] font-semibold mt-1">
-                    Proyectos y marcas online
-                  </p>
-                </div>
-                <div>
-                  <p className="text-2xl sm:text-3xl font-extrabold text-[#00BFB3] tracking-tight">
-                    24/7
-                  </p>
-                  <p className="text-xs text-[#52646C] font-semibold mt-1">
-                    Sistemas de reservas activos
-                  </p>
-                </div>
-                <div>
-                  <p className="text-2xl sm:text-3xl font-extrabold text-[#253740] tracking-tight">
-                    100%
-                  </p>
-                  <p className="text-xs text-[#52646C] font-semibold mt-1">
-                    Cero comisiones por venta
-                  </p>
-                </div>
-              </div>
-            </div>
+export const About: React.FC = () => (
+  <section id="nosotros" aria-labelledby="about-title" className="py-12 md:py-20 bg-[#FAFAF9] relative overflow-hidden">
+    <div className="absolute top-1/3 left-0 w-96 h-96 bg-[#00BFB3]/5 rounded-full blur-3xl pointer-events-none" />
+    <div className="max-w-7xl mx-auto px-6 md:px-10 relative">
+      <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-stretch">
+        <div className="lg:col-span-5">
+          <FadeIn>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#CBD5E1] text-xs font-semibold text-[#52646C] mb-4"><span className="w-2 h-2 rounded-full bg-[#00BFB3]" />Sobre TuWeb Studio</div>
+            <h2 id="about-title" className="text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-[#253740] leading-[0.95]">MÁS QUE<br /><span className="bg-gradient-to-r from-[#253740] via-[#00BFB3] to-[#00A89D] bg-clip-text text-transparent">UNA WEB</span></h2>
+          </FadeIn>
+          <div className="mt-7 space-y-3">
+            {pillars.map(({ icon: Icon, title, text }, i) => <FadeIn key={title} delay={i * 0.08}><div className="p-4 rounded-xl bg-white border border-[#E2E8F0] shadow-xs flex gap-4 items-center"><div className="w-10 h-10 rounded-lg bg-[#E6F8F7] text-[#00BFB3] flex items-center justify-center shrink-0"><Icon className="w-5 h-5" /></div><div><h3 className="text-sm font-bold text-[#253740]">{title}</h3><p className="text-xs text-[#52646C] mt-1 leading-relaxed">{text}</p></div></div></FadeIn>)}
           </div>
         </div>
+        <FadeIn className="lg:col-span-7 flex">
+          <div className="p-7 sm:p-9 md:p-10 rounded-3xl bg-white border border-[#E2E8F0] shadow-sm flex flex-col justify-center">
+            <div className="text-xs font-mono uppercase tracking-wider text-[#00857D] font-bold mb-6 flex items-center gap-2"><Sparkles className="w-4 h-4 shrink-0" /><span>Nuestra Filosofía de Trabajo</span></div>
+            <p className="text-xl sm:text-2xl md:text-3xl font-medium leading-relaxed tracking-tight text-[#253740]">Una buena web tiene que verse linda, <span className="text-[#00857D]">funcionar y simplificar tu día.</span></p>
+            <p className="mt-5 text-base leading-relaxed text-[#52646C]">Escuchamos lo que necesitás y creamos una solución a medida para tu negocio, acompañándote en cada paso.</p>
+          </div>
+        </FadeIn>
       </div>
-    </section>
-  );
-};
+      <FadeIn className="mt-12 md:mt-16">
+        <article aria-labelledby="founder-name" className="founder-panel rounded-3xl border border-[#E2E8F0] bg-white shadow-sm p-6 sm:p-8 md:p-10 grid lg:grid-cols-12 gap-8 lg:gap-12 items-center relative overflow-hidden">
+          <div className="absolute right-0 top-0 w-2/3 h-full bg-gradient-to-l from-[#E6F8F7]/40 to-transparent pointer-events-none" />
+          <div className="lg:col-span-4 relative max-w-sm w-full mx-auto">
+            <img src="/assets/lorena-planes-perfil.jpeg" alt="Lorena Planes, creadora de TuWeb Studio" width={1080} height={1350} loading="lazy" className="w-full aspect-[9/10] object-cover object-bottom rounded-2xl border border-[#00BFB3]/40 shadow-lg" />
+            <span className="absolute -bottom-3 left-5 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#253740] text-white text-xs font-bold shadow-md"><span className="w-2 h-2 bg-[#00BFB3] rounded-full" />Trato 100% directo</span>
+          </div>
+          <div className="lg:col-span-8 relative">
+            <span className="inline-block px-3 py-1 rounded-full bg-[#E6F8F7] text-[#00857D] text-xs font-semibold">DISEÑO Y DESARROLLO WEB</span>
+            <h3 id="founder-name" className="mt-5 text-3xl md:text-4xl font-extrabold tracking-tight text-[#253740]">Lorena Planes</h3>
+            <p className="mt-1 text-sm font-semibold text-[#00857D]">Creadora de TuWeb Studio · Olavarría, Argentina</p>
+            <div className="mt-6 space-y-4 text-sm md:text-base leading-relaxed text-[#52646C]">
+              <p>Soy Lorena, la persona detrás de TuWeb Studio. Me dedico al diseño y desarrollo de sitios y aplicaciones web, y sistemas a medida que ayudan a los negocios a crecer, organizarse y simplificar su trabajo.</p>
+              <p>Me gusta involucrarme en cada proyecto, conocer cómo funciona cada negocio y encontrar la mejor manera de llevar sus ideas a la práctica. Trabajo de forma personalizada y, cuando el proyecto lo requiere, cuento con la colaboración de otros profesionales.</p>
+              <p>Mi objetivo es que la tecnología sea una herramienta que realmente facilite el día a día: desde mostrar lo que un negocio ofrece hasta gestionar turnos, ventas y tareas internas.</p>
+            </div>
+            <div className="mt-7 flex flex-wrap items-center gap-3">
+              <a href="https://wa.me/5492284230375" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#00BFB3] text-[#1A2830] text-sm font-bold hover:bg-[#00A89D] transition-colors"><WhatsAppIcon className="w-4 h-4" />Escribirme por WhatsApp<ArrowUpRight className="w-4 h-4" /></a>
+              <a href="mailto:tuwebstudioolav@gmail.com" className="inline-flex items-center gap-2 px-4 py-3 rounded-full bg-[#F0EDEE] text-[#253740] text-sm font-semibold hover:bg-[#E6F8F7] transition-colors"><Mail className="w-4 h-4 text-[#00857D]" />tuwebstudioolav@gmail.com</a>
+              <span className="inline-flex items-center gap-2 text-xs text-[#52646C]"><MapPin className="w-4 h-4 text-[#00857D]" />Olavarría, Bs. As.</span>
+            </div>
+          </div>
+        </article>
+      </FadeIn>
+    </div>
+  </section>
+);

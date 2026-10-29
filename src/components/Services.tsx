@@ -82,10 +82,10 @@ export const Services: React.FC = () => {
   const [activeService, setActiveService] = useState<number | null>(null);
 
   return (
-    <section id="servicios" className="py-24 md:py-36 bg-[#FAFAF9] relative">
+    <section id="servicios" className="py-12 md:py-20 bg-[#FAFAF9] relative">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 md:mb-24">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 md:mb-14">
           <FadeIn direction="up">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#CBD5E1] text-xs font-semibold text-[#52646C] mb-3">
               <Sparkles className="w-3.5 h-3.5 text-[#00BFB3]" />

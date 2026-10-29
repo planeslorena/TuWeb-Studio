@@ -76,7 +76,7 @@ export const FeaturedProjects: React.FC = () => {
   return (
     <section
       id="proyectos"
-      className="relative bg-[#1A2830] text-white pt-24 md:pt-36 pb-28 md:pb-36 rounded-t-[2.5rem] md:rounded-t-[4rem] shadow-2xl overflow-hidden -mt-8 z-20"
+      className="relative bg-[#1A2830] text-white py-12 md:py-20 rounded-t-[2.5rem] md:rounded-t-[4rem] shadow-2xl overflow-hidden -mt-8 z-20"
     >
       {/* Background soft turquoise ambient glows */}
       <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#00BFB3]/10 rounded-full blur-[140px] pointer-events-none" />
@@ -84,7 +84,7 @@ export const FeaturedProjects: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
           <FadeIn direction="up">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#253740] border border-[#3A4E58] text-xs font-semibold text-[#00BFB3] mb-3">
               <Sparkles className="w-3.5 h-3.5" />
