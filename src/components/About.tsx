@@ -26,8 +26,8 @@ export const About: React.FC = () => (
         <FadeIn className="lg:col-span-7 flex">
           <div className="p-7 sm:p-9 md:p-10 rounded-3xl bg-white border border-[#E2E8F0] shadow-sm flex flex-col justify-center">
             <div className="text-xs font-mono uppercase tracking-wider text-[#00857D] font-bold mb-6 flex items-center gap-2"><Sparkles className="w-4 h-4 shrink-0" /><span>Nuestra Filosofía de Trabajo</span></div>
-            <p className="text-xl sm:text-2xl md:text-3xl font-medium leading-relaxed tracking-tight text-[#253740]">Una buena web tiene que verse linda, <span className="text-[#00857D]">funcionar y simplificar tu día.</span></p>
-            <p className="mt-5 text-base leading-relaxed text-[#52646C]">Escuchamos lo que necesitás y creamos una solución a medida para tu negocio, acompañándote en cada paso.</p>
+            <p className="text-xl sm:text-2xl md:text-3xl font-medium leading-relaxed tracking-tight text-[#253740]">Una buena web no solo tiene que verse linda: <span className="text-[#00857D]">tiene que funcionar, simplificar procesos y ayudar a que tu negocio crezca.</span></p>
+            <p className="mt-5 text-base leading-relaxed text-[#52646C]">Escuchamos tus ideas, entendemos lo que necesitás y creamos soluciones digitales a medida, acompañándote desde el primer paso hasta mucho después del lanzamiento.</p>
           </div>
         </FadeIn>
       </div>
