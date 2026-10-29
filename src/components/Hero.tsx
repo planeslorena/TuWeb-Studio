@@ -57,7 +57,7 @@ export const Hero: React.FC = () => {
           <FadeIn direction="up" delay={0.2}>
             <h1 className="font-extrabold uppercase tracking-tighter leading-[0.88] select-none text-[clamp(2.75rem,10.5vw,9.5rem)] text-[#253740]">
               TUWEB{' '}
-              <span className="bg-gradient-to-r from-[#253740] via-[#00BFB3] to-[#00A89D] bg-clip-text text-transparent">
+              <span className="brand-gradient-text">
                 STUDIO
               </span>
             </h1>

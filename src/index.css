@@ -27,6 +27,31 @@
 }
 
 /* Custom smooth scrollbar */
+/* Keep headings readable without modern color spaces or registered properties. */
+.brand-gradient-text { color: #00857d; }
+.brand-gradient-text-light { color: #ffffff; }
+
+@supports ((background-clip: text) or (-webkit-background-clip: text)) and (background-image: linear-gradient(to right, #253740, #00bfb3, #00a89d)) {
+  .brand-gradient-text {
+    background-image: linear-gradient(to right, #253740, #00bfb3, #00a89d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  .brand-gradient-text-light { background-image: linear-gradient(to right, #ffffff, #00bfb3, #00a89d); }
+
+  /* Preserve the existing color interpolation in browsers that support it. */
+  @supports (background-image: linear-gradient(to right in oklab, #253740, #00bfb3, #00a89d)) {
+    .brand-gradient-text { background-image: linear-gradient(to right in oklab, #253740, #00bfb3, #00a89d); }
+    .brand-gradient-text-light { background-image: linear-gradient(to right in oklab, #ffffff, #00bfb3, #00a89d); }
+  }
+}
+
+@media (forced-colors: active) {
+  .brand-gradient-text { background-image: none; color: CanvasText; -webkit-text-fill-color: CanvasText; }
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }

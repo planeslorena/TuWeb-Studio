@@ -92,7 +92,7 @@ export const FeaturedProjects: React.FC = () => {
             </div>
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight leading-[0.95]">
               PROYECTOS QUE HABLAN{' '}
-              <span className="bg-gradient-to-r from-white via-[#00BFB3] to-[#00A89D] bg-clip-text text-transparent">
+              <span className="brand-gradient-text brand-gradient-text-light">
                 POR NOSOTROS
               </span>
             </h2>

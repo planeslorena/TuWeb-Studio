@@ -23,7 +23,7 @@ export const ProjectsMarquee: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#253740] border border-[#3A4E58] text-xs font-semibold text-[#00BFB3] mb-4">
             <Sparkles className="w-3.5 h-3.5" /><span>Casos de Éxito Reales</span>
           </div>
-          <h2 id="projects-title" className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight leading-[0.98] text-white">PROYECTOS QUE HABLAN<br /><span className="bg-gradient-to-r from-white via-[#00BFB3] to-[#00A89D] bg-clip-text text-transparent">POR NOSOTROS</span></h2>
+          <h2 id="projects-title" className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight leading-[0.98] text-white">PROYECTOS QUE HABLAN<br /><span className="brand-gradient-text brand-gradient-text-light">POR NOSOTROS</span></h2>
           <p className="mt-6 text-neutral-300 text-sm md:text-lg leading-relaxed max-w-5xl mx-auto">Cada proyecto es una solución a medida desarrollada con foco en diseño, usabilidad y resultados de negocio.</p>
         </FadeIn>
       </div>

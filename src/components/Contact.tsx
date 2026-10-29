@@ -53,7 +53,7 @@ export const Contact: React.FC = () => {
               ¿TENÉS UNA IDEA?
             </h2>
 
-            <h3 className="mt-2 text-3xl sm:text-5xl md:text-7xl font-black uppercase tracking-tight bg-gradient-to-r from-[#253740] via-[#00BFB3] to-[#00A89D] bg-clip-text text-transparent leading-[0.9]">
+            <h3 className="mt-2 text-3xl sm:text-5xl md:text-7xl font-black uppercase tracking-tight brand-gradient-text leading-[0.9]">
               HAGÁMOSLA REALIDAD.
             </h3>
 

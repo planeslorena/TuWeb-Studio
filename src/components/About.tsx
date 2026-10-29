@@ -17,7 +17,7 @@ export const About: React.FC = () => (
         <div className="lg:col-span-5">
           <FadeIn>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#CBD5E1] text-xs font-semibold text-[#52646C] mb-4"><span className="w-2 h-2 rounded-full bg-[#00BFB3]" />Sobre TuWeb Studio</div>
-            <h2 id="about-title" className="text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-[#253740] leading-[0.95]">MÁS QUE<br /><span className="bg-gradient-to-r from-[#253740] via-[#00BFB3] to-[#00A89D] bg-clip-text text-transparent">UNA WEB</span></h2>
+            <h2 id="about-title" className="text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-[#253740] leading-[0.95]">MÁS QUE<br /><span className="brand-gradient-text">UNA WEB</span></h2>
           </FadeIn>
           <div className="mt-7 space-y-3">
             {pillars.map(({ icon: Icon, title, text }, i) => <FadeIn key={title} delay={i * 0.08}><div className="p-4 rounded-xl bg-white border border-[#E2E8F0] shadow-xs flex gap-4 items-center"><div className="w-10 h-10 rounded-lg bg-[#E6F8F7] text-[#00BFB3] flex items-center justify-center shrink-0"><Icon className="w-5 h-5" /></div><div><h3 className="text-sm font-bold text-[#253740]">{title}</h3><p className="text-xs text-[#52646C] mt-1 leading-relaxed">{text}</p></div></div></FadeIn>)}
